@@ -173,7 +173,7 @@
         let output = document.querySelector("#cityNameTag");
         let whereTown = input.value;
         output.innerHTML = input.value;
-        let apiKey = "b81bc829f24d038a00971d55be0bd38d";
+        let apiKey = "//yourownAPIkeyhere//";
         let unit = "metric";
         let apiURL1 = `https://api.openweathermap.org/data/2.5/weather?q=${whereTown}&appid=${apiKey}&units=${unit}`;
         axios.get(apiURL1).then(showNewTemp);
